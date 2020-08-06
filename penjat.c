@@ -33,7 +33,7 @@ int main()
             num_paraules++;
             fscanf(fit, "%s", paraula);
         }
-        if(num_paraules>10 || num_paraules<1)     /*si el fitxer està buit o conté mes de 10 paraules*/
+        if(num_paraules>10 || num_paraules<1)     /*si el fitxer estÃ  buit o contÃ© mes de 10 paraules*/
         {
             if (num_paraules>10)
             {
@@ -46,7 +46,7 @@ int main()
         }
         else
         {
-            /*demanem el nom, això no es repetirà*/
+            /*demanem el nom, aixÃ² no es repetirÃ */
             printf("Benvingut/da al joc del penjat! Com et dius?\n");
             gets(nom);
             system("cls");
@@ -96,7 +96,7 @@ int main()
                     resposta[i]='\0';
                 }
 
-                /*comença el joc*/
+                /*comenÃ§a el joc*/
 
                 /*inicialitzem variables*/
                 j=0;
@@ -141,7 +141,7 @@ int main()
                         }
                     }
 
-                    if (j!=0)   /*només posem coma a partir de la segona lletra*/
+                    if (j!=0)   /*nomÃ©s posem coma a partir de la segona lletra*/
                     {
                         llet_util[j]=',';
                         j++;
@@ -154,7 +154,7 @@ int main()
                     i=0;
                     while(paraula[i]!='\0') /*mentre no s'acabi la paraula*/
                     {
-                        if(paraula[i]==lletra) /*si la lletra coincideix la col·loquem a la resposta*/
+                        if(paraula[i]==lletra) /*si la lletra coincideix la colÂ·loquem a la resposta*/
                         {
                             resposta[i]=lletra;
                             cont++;     /*aquest contador ens diu si la lletra esta a la paraula o no*/
@@ -177,7 +177,7 @@ int main()
                     {
                         if (resposta[i]=='_')
                         {
-                            recompte++;     /*si el recompte de '_' és diferent de 0, vol dir que encara no ha trobat la paraula*/
+                            recompte++;     /*si el recompte de '_' Ã©s diferent de 0, vol dir que encara no ha trobat la paraula*/
                         }
                         i++;
                     }
